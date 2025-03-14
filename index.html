@@ -1,149 +1,343 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="title" content="VXNR - Portfolio" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Primary Meta Tags -->
-  <title>Vinay Kumar Reddy</title>
-  <meta name="title" content="Vinay kumar" />
-  
-  <!-- Link -->
+  <title>VXNR - Portfolio</title>
+
+  <!-- Favicon / Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome and Google Fonts -->
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- ==================== Navbar ==================== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <!-- Brand / Logo -->
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">VXNR</a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#journey">Journey</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li>
+          <a
+            class="nav-link"
+            href="https://drive.google.com/file/d/1fRiQoQhnXIR5VYoLt_A7agX80IPjFI38/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
+      </ul>
+
+      <!-- Theme Switch Slider -->
+      <label class="theme-switch">
+        <input type="checkbox" id="switch" />
+        <span class="slider"></span>
+      </label>
+
+      <!-- Hamburger for Mobile -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== Hero Section ==================== -->
   <header id="hero">
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <!-- Logo -->
-        <h1 id="logo">
-          <a href="index.html">Vinay Kumar Reddy</a>
-        </h1>
-        <!-- Navbar links -->
-        <ul class="nav-menu">
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li ><a class="nav-link" href="about.html">About</a></li>
-          <li><a class="nav-link" href="https://drive.google.com/file/d/1fRiQoQhnXIR5VYoLt_A7agX80IPjFI38/view?usp=sharing" target="_blank">Resume</a></li>
-
-          <!-- Toggle switch -->
-          <div class="theme-switch">
-            <input type="checkbox" id="switch" />
-            <label class="toggle-icons" for="switch">
-              <img class="moon" src="assets/moon.svg" />
-              <img class="sun" src="assets/sun.svg" />
-            </label>
-          </div>
-          <!-- Hamburger menu -->
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
-
-    <br><br><br>
     <section class="header-container">
-      <img class="profile-image"
-        src="assets/My Photo.jpg"
-      <br>
-      <h1>Hello, This is Vinay Kumar</h1>
-
-      <div class="content-text">
-        <h2>I'm a Web Developer</h2>
-      </div>
-      <div>
-        <p>scroll down to see my projects</p>
+      <div class="hero-content">
+        <div class="profile-container">
+          <img
+            class="profile-image"
+            src="assets/My Photo.jpg"
+            alt="VXNR Profile Photo"
+          />
+        </div>
+        <h1>
+          Hello! I’m <span class="highlight">Vinay Kumar</span>
+        </h1>
+        <!-- Typed Text Effect -->
+        <h2>
+          I’m <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </h2>
+        <p>
+          A CSE undergrad at VIT Bhopal, passionate about building user-friendly 
+          web applications. Scroll down to see what I’ve been up to!
+        </p>
+        <a href="#projects" class="btn btn-primary hero-cta">View Projects</a>
       </div>
     </section>
   </header>
 
-  <!-- Projects -->
-  <section id="projects" class="project-container container">
+  <!-- ==================== Skills Section ==================== -->
+  <section id="skills" class="skills-section container">
+    <div class="content-text">
+      <h2>My Skillset</h2>
+      <p>A quick overview of the tools and languages I use.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-html5 skill-icon" style="color:#E44D26;"></i>
+        <h3>HTML</h3>
+        <p>Semantic structure & accessibility best practices.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt skill-icon" style="color:#1572B6;"></i>
+        <h3>CSS</h3>
+        <p>Responsive layouts, animations, preprocessors.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square skill-icon" style="color:#F7DF1E;"></i>
+        <h3>JavaScript</h3>
+        <p>ES6+, DOM manipulation, asynchronous coding.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-react skill-icon" style="color:#61DBFB;"></i>
+        <h3>React (Basics)</h3>
+        <p>Building UI components, Hooks, state management.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database skill-icon" style="color:#4DB33D;"></i>
+        <h3>Databases</h3>
+        <p>SQL, NoSQL basics (MongoDB), data modeling.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code-branch skill-icon" style="color:#F54D27;"></i>
+        <h3>Git & GitHub</h3>
+        <p>Version control, branching, open-source contributions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Projects Section ==================== -->
+  <section id="projects" class="container project-section">
     <div class="division"></div>
     <div class="content-text">
       <h2>Projects</h2>
-    </div><br>
-
-    <article class="project">
+      <p>Some highlights of my work in web development.</p>
+    </div>
+    <article class="projects-grid">
       <!-- Project 1 -->
-      <div href="" class="card">
+      <div class="card">
         <div class="project-info">
           <div class="project-bio">
-            <h3>e - commerce website</h3>
-            <p>HTML,CSS,JAVA SCRIPT</p>
+            <h3>E-Commerce Website</h3>
+            <p>HTML, CSS, JavaScript</p>
           </div>
-
           <div class="project-link">
-            <a href="https://github.com/proparitoshsingh/e-commerce-project" target="_blank"><i class="fab fa-github"></i></a>
+            <a
+              href="https://github.com/proparitoshsingh/e-commerce-project"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
             <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
           </div>
         </div>
       </div>
-
       <!-- Project 2 -->
-      <div href="" class="card">
+      <div class="card">
         <div class="project-info">
           <div class="project-bio">
-            <h3>Farm delight landing</h3>
-            <p></p>
+            <h3>Farm Delight Landing</h3>
+            <p>Landing Page</p>
           </div>
-
           <div class="project-link">
-            <a href="https://github.com/farm-delight/landing" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://farm-delight.github.io/landing/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a
+              href="https://github.com/farm-delight/landing"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://farm-delight.github.io/landing/"
+              target="_blank"
+              ><i class="fas fa-globe"></i
+            ></a>
           </div>
         </div>
       </div>
-
-      <!-- Porject 3 -->
-      <div href="" class="card">
+      <!-- Project 3 -->
+      <div class="card">
         <div class="project-info">
           <div class="project-bio">
             <h3>Farm Customer</h3>
-            <p></p>
+            <p>Customer-Facing Site</p>
           </div>
-
           <div class="project-link">
-            <a href="https://github.com/farm-delight/customer
-                      " target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://farm-delight.github.io/customer/"
-               target="_blank"><i class="fas fa-globe"></i></a>
+            <a
+              href="https://github.com/farm-delight/customer"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://farm-delight.github.io/customer/"
+              target="_blank"
+              ><i class="fas fa-globe"></i
+            ></a>
           </div>
         </div>
       </div>
     </article>
   </section>
 
-  <br><br>  
-  <footer id="footer">
-    <div class="container">
-      <u><a style="color:#14FFEC; font-size: medium;" href="mailto:boggulavinaykumar649@gmail.com">Send an email here</a></u>
-      <!-- Social links -->
-      <br><div class="social">
-        <a href="https://www.linkedin.com/in/vinay-kumar-8bb495214/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
-        <a href="https://github.com/vinaykumar649" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-        <a href="https://x.com/gxdlmighty?t=UmhCKHLBxcAfnpxEbq3yqw&s=09" target="_blank"><img src="./assets/twitter.svg" alt="Twitter" /></a>
+  <!-- ==================== Timeline / Journey Section ==================== -->
+  <section id="journey" class="timeline-section container">
+    <div class="division"></div>
+    <div class="content-text">
+      <h2>My Journey</h2>
+      <p>A snapshot of my academic path and milestones up to 2025.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2019</div>
+        <div class="timeline-content">
+          <h3>Joined VIT Bhopal (CSE)</h3>
+          <p>Jumped into core programming, data structures, and OOP.</p>
+        </div>
       </div>
-    
-      <br><p>Copyright &copy; Vinay Kumar Reddy <span id="datee"></span>, All rights reserved</p>
+      <div class="timeline-item">
+        <div class="timeline-date">2020</div>
+        <div class="timeline-content">
+          <h3>Web Dev Foundations</h3>
+          <p>Focused on HTML, CSS, JS basics. Built personal mini-projects.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2021</div>
+        <div class="timeline-content">
+          <h3>Collaborations & Open Source</h3>
+          <p>Worked on group projects, contributed to GitHub repositories.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2022</div>
+        <div class="timeline-content">
+          <h3>Advanced JavaScript & React</h3>
+          <p>Dove deeper into React, ES6+, and backend fundamentals.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <h3>Internship Experience</h3>
+          <p>Secured a development internship, built real-world applications.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content">
+          <h3>Final Year Project</h3>
+          <p>Led a team to develop a major project integrating front & backend.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <h3>Graduation & Future Plans</h3>
+          <p>Completed B.Tech in CSE with strong academic record. Ready for the next step!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Contact Section ==================== -->
+  <section id="contact" class="contact-section container">
+    <div class="division"></div>
+    <div class="content-text">
+      <h2>Get in Touch</h2>
+      <p>Have a question, idea, or opportunity? Reach out!</p>
+    </div>
+    <!-- 
+      For a direct "mailto" approach:
+      method="POST" action="mailto:YOUR_EMAIL?subject=New%20Contact" 
+      enctype="text/plain"
+
+      This opens the user's default mail client with a pre-filled email.
+      If you want an in-browser send, you'd need a server or EmailJS. 
+    -->
+    <form
+      class="contact-form"
+      method="POST"
+      action="mailto:boggulavinaykumar649@gmail.com?subject=New%20Portfolio%20Contact"
+      enctype="text/plain"
+    >
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="Name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="Email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="Message" placeholder="Your Message" required></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <u>
+        <a
+          style="color: var(--primary-color); font-size: medium;"
+          href="mailto:boggulavinaykumar649@gmail.com"
+          >Send an email here</a
+        >
+      </u>
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/vinay-kumar-8bb495214/"
+          target="_blank"
+          ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+        /></a>
+        <a href="https://github.com/vinaykumar649" target="_blank"
+          ><img src="./assets/github-icon.svg" alt="GitHub"
+        /></a>
+        <a
+          href="https://x.com/gxdlmighty?t=UmhCKHLBxcAfnpxEbq3yqw&s=09"
+          target="_blank"
+          ><img src="./assets/twitter.svg" alt="Twitter"
+        /></a>
+      </div>
+      <p>
+        &copy; <span id="datee"></span> VXNR. All rights reserved.
+      </p>
     </div>
   </footer>
+
+  <!-- JS -->
   <script src="js/script.js"></script>
 </body>
-
 </html>
